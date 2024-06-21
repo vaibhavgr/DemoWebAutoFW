@@ -1,9 +1,13 @@
 package com.DemoWeb.test;
 
+import java.io.IOException;
+import java.util.Properties;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.DemoWeb.Utils.TestProperties;
 import com.DemoWeb.Utils.UniqueGenerator;
 
 
@@ -28,13 +32,13 @@ public class HomePageTestCases extends BaseTest {
 
 	// Validate Getting Thank you message
 	@Test(dataProvider ="getData")
-	public void VerifyGettingThankMessageAfterSubscription(String emailVal) throws InterruptedException 
+	public void VerifyGettingThankMessageAfterSubscription(String emailVal) throws InterruptedException, IOException 
 	{
-		LP.ClickOnloginBtn();
-		LP.Login();
-		String ActualText = HP.NewsLetterThankYouMessage(emailVal);
+		Properties prop = TestProperties.getProperties();
+		String ActualText= prop.getProperty("subscriptionMsg");
+		String ExpectedText = HP.NewsLetterThankYouMessage(emailVal);
 		Thread.sleep(2000);	
-		Assert.assertEquals(ActualText, "Thank you for signing up! A verification email has been sent. We appreciate your interest.");
+		Assert.assertEquals(ActualText, ExpectedText);
 	}
 
 	

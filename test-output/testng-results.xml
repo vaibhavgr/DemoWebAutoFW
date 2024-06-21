@@ -1,21 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T16:24:41 IST" name="Default suite" finished-at="2024-06-17T16:24:58 IST" duration-ms="17386">
+  <suite started-at="2024-06-21T22:33:11 IST" name="Default suite" finished-at="2024-06-21T22:34:05 IST" duration-ms="53500">
     <groups>
     </groups>
-    <test started-at="2024-06-17T16:24:41 IST" name="Default test" finished-at="2024-06-17T16:24:58 IST" duration-ms="17386">
-      <class name="com.DemoWeb.test.LoginTest">
-        <test-method is-config="true" signature="initialiseDriver()[pri:0, instance:com.DemoWeb.test.LoginTest@7f3b84b8]" started-at="2024-06-17T16:24:41 IST" name="initialiseDriver" finished-at="2024-06-17T16:24:55 IST" duration-ms="13425" status="PASS">
+    <test started-at="2024-06-21T22:33:11 IST" name="Default test" finished-at="2024-06-21T22:34:05 IST" duration-ms="53500">
+      <class name="com.DemoWeb.test.HomePageTestCases">
+        <test-method is-config="true" signature="initialiseDriver()[pri:0, instance:com.DemoWeb.test.HomePageTestCases@747ddf94]" started-at="2024-06-21T22:33:11 IST" name="initialiseDriver" finished-at="2024-06-21T22:33:19 IST" duration-ms="7680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseDriver -->
-        <test-method signature="VerifyUserIsAbleToLoginAndViewTheLoginEmailPostLogin()[pri:2, instance:com.DemoWeb.test.LoginTest@7f3b84b8]" started-at="2024-06-17T16:24:55 IST" name="VerifyUserIsAbleToLoginAndViewTheLoginEmailPostLogin" finished-at="2024-06-17T16:24:58 IST" duration-ms="3794" status="PASS">
+        <test-method signature="VerifyGettingThankMessageAfterSubscription(java.lang.String)[pri:0, instance:com.DemoWeb.test.HomePageTestCases@747ddf94]" started-at="2024-06-21T22:33:19 IST" name="VerifyGettingThankMessageAfterSubscription" data-provider="getData" finished-at="2024-06-21T22:33:30 IST" duration-ms="10680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1538.5368378896858@yopmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyUserIsAbleToLoginAndViewTheLoginEmailPostLogin -->
-      </class> <!-- com.DemoWeb.test.LoginTest -->
+        </test-method> <!-- VerifyGettingThankMessageAfterSubscription -->
+        <test-method is-config="true" signature="initialiseDriver()[pri:0, instance:com.DemoWeb.test.HomePageTestCases@747ddf94]" started-at="2024-06-21T22:33:30 IST" name="initialiseDriver" finished-at="2024-06-21T22:33:36 IST" duration-ms="6686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseDriver -->
+        <test-method signature="VerifyGettingThankMessageAfterSubscription(java.lang.String)[pri:0, instance:com.DemoWeb.test.HomePageTestCases@747ddf94]" started-at="2024-06-21T22:33:36 IST" name="VerifyGettingThankMessageAfterSubscription" data-provider="getData" finished-at="2024-06-21T22:33:46 IST" duration-ms="9472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18460.976804574242@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGettingThankMessageAfterSubscription -->
+        <test-method is-config="true" signature="initialiseDriver()[pri:0, instance:com.DemoWeb.test.HomePageTestCases@747ddf94]" started-at="2024-06-21T22:33:46 IST" name="initialiseDriver" finished-at="2024-06-21T22:33:59 IST" duration-ms="12733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseDriver -->
+        <test-method signature="VerifyGettingThankMessageAfterSubscription(java.lang.String)[pri:0, instance:com.DemoWeb.test.HomePageTestCases@747ddf94]" started-at="2024-06-21T22:33:59 IST" name="VerifyGettingThankMessageAfterSubscription" data-provider="getData" finished-at="2024-06-21T22:34:04 IST" duration-ms="5842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[35840.491410735536@hotstar.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGettingThankMessageAfterSubscription -->
+      </class> <!-- com.DemoWeb.test.HomePageTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
