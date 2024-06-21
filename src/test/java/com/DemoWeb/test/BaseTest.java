@@ -10,10 +10,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 
-import com.DemoWeb.Utils.TestProperties;
-
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
+import utils.TestProperties;
 
 
 

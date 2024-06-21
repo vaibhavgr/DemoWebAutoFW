@@ -1,4 +1,4 @@
-package com.DemoWeb.Utils;
+package utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

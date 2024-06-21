@@ -7,8 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.DemoWeb.Utils.TestProperties;
-import com.DemoWeb.Utils.UniqueGenerator;
+import utils.TestProperties;
+import utils.UniqueGenerator;
 
 
 

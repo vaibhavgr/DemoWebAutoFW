@@ -1,4 +1,4 @@
-package com.DemoWeb.Utils;
+package utils;
 
 import java.time.Duration;
 import java.util.ArrayList;
