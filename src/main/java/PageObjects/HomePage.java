@@ -25,6 +25,9 @@ public class HomePage extends BasePage
 	@FindBy(xpath = "//div[@class='newsletter-email']//input[@id='newsletter-email']")
 	protected WebElement NewsLetterEmailInput;
 	
+	@FindBy(xpath = "//*[@class='ico-register']") 
+	 protected WebElement registerBtn;
+	
 
 	public void ClickSubscribeBtn() {
 		clickElement(SubscribeBtn);
@@ -45,6 +48,10 @@ public class HomePage extends BasePage
 	{
 		return EnterValidEmail.getText();
 	}
+	
+	public void navigateToRegistration() { 
+		  clickElement(registerBtn); 
+		 }
 	
 	
 }

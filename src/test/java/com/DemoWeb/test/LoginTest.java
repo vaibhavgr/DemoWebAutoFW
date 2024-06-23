@@ -1,8 +1,12 @@
 package com.DemoWeb.test;
 
-import org.openqa.selenium.WebElement;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import utils.TestProperties;
 
 public class LoginTest extends BaseTest {
 
@@ -14,9 +18,12 @@ public class LoginTest extends BaseTest {
 
 	// Verify user is able to login successfully &able  to view email id post login
 	@Test(priority = 2)
-	public void VerifyUserIsAbleToLoginAndViewTheLoginEmailPostLogin() {
+	public void VerifyUserIsAbleToLoginAndViewTheLoginEmailPostLogin() throws IOException {
 		LP.ClickOnloginBtn();
-		String actualEmail = LP.Login();
+		Properties prop = TestProperties.getProperties();
+		//System.out.println(prop.getProperty("email"));
+		//System.out.println(prop.getProperty("Password"));
+		String actualEmail = LP.Login(prop.getProperty("email"), prop.getProperty("Password"));
 		String expectedEmail = LP.LoginEmailFetch();
 		//Assert.assertEquals(expectedEmail, "obsqura24@gmail.com");
 		

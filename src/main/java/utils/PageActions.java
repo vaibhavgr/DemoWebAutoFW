@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class PageActions 
 
@@ -18,6 +19,7 @@ public class PageActions
 	public void clickElement(WebElement element)
 	{
 		waitUntilClickable(element);
+		waitUntilDisplayed(element);
 		element.click();
 	}
 	
@@ -43,4 +45,31 @@ public class PageActions
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	
 }
+	public String getElementText(WebElement element) { 
+		  waitUntilDisplayed(element); 
+		  return element.getText(); 
+		 }
+	
+	public void waitUntilDisplayed(WebElement element) 
+	 
+	 { 
+	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+	  // driver.manage().timeouts()element.(Duration.ofSeconds(5)); 
+	  // driver.wait(12, 1);.wait(Duration.ofSeconds(0, 0)); 
+	  wait.until(ExpectedConditions.visibilityOfAllElements(element)); 
+	 
+	 }
+	
+	public boolean isElementDisplayed(WebElement element)
+	{
+		try
+		{
+			return element.isDisplayed();
+		}
+		catch(Exception e)
+		{
+			Assert.fail("Element is not displayed");
+		}
+		return false;
+	}
 }

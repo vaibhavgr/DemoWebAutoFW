@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
+import PageObjects.RegistrationPage;
 import utils.TestProperties;
 
 
@@ -54,16 +55,12 @@ public class BaseTest {
 
 	public LoginPage LP;
 	public HomePage HP;
+	public RegistrationPage RP;
 
 	public void initPages() {
 
 		LP = new LoginPage(driver);
 		HP = new HomePage(driver);
-		
-		
-		
-	
-		
-
-	}
+		RP = new RegistrationPage(driver); 
+		}
 }

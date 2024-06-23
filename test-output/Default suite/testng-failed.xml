@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DemoWeb.test.HomePageTestCases">
+      <class name="com.DemoWeb.test.DataDrivenRegistration">
         <methods>
           <include name="initialiseDriver"/>
-          <include name="VerifyGettingThankMessageAfterSubscription" invocation-numbers="0 1 2"/>
+          <include name="verifyUserIsAbleToRegisterMultiplePerson"/>
         </methods>
-      </class> <!-- com.DemoWeb.test.HomePageTestCases -->
+      </class> <!-- com.DemoWeb.test.DataDrivenRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
